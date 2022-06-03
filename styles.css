@@ -459,7 +459,8 @@
     cursor: pointer;
   }
 
-  .btn-primary-dark:hover, .btn-primary-dark:focus {
+  .btn-primary-dark:hover,
+  .btn-primary-dark:focus {
     border: 1px solid goldenrod;
     background: white;
     color: #172b4d;
