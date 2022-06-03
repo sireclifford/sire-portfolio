@@ -455,5 +455,13 @@
     border: 1px solid #36b37f;
     padding: 12px;
     border-radius: 8px;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+  }
+
+  .btn-primary-dark:hover, .btn-primary-dark:focus {
+    border: 1px solid goldenrod;
+    background: white;
+    color: #172b4d;
   }
 }
