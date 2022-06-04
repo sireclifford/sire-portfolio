@@ -20,8 +20,8 @@
                 </ul>
             </nav>
             <div id="header-heading">
-                Hey there. I’m Clifford.
-                <span>I’m a software developer</span>
+                Hey there. I’m Clifford.<br />
+                I’m a software developer
             </div>
             <div id="header-desc">
                 <p> I can help you build a product , feature or website Look through some of my work and experience! If
@@ -53,7 +53,7 @@
                             <li>Javascript</li>
                             <li>Html</li>
                         </ul>
-                        <a href="#" class="btn-success">See Project</a>
+                        <a href="#" class="see-project">See Project</a>
                     </div>
                 </div>
                 <div class="work-card">
@@ -66,7 +66,7 @@
                             <li>Javascript</li>
                             <li>Html</li>
                         </ul>
-                        <a href="#" class="btn-success">See Project</a>
+                        <a href="#" class="see-project">See Project</a>
                     </div>
                 </div>
                 <div class="work-card">
@@ -79,7 +79,7 @@
                             <li>Javascript</li>
                             <li>Html</li>
                         </ul>
-                        <a href="#" class="btn-success">See Project</a>
+                        <a href="#" class="see-project">See Project</a>
                     </div>
                 </div>
                 <div class="work-card">
@@ -92,7 +92,7 @@
                             <li>Javascript</li>
                             <li>Html</li>
                         </ul>
-                        <a href="#" class="btn-success">See Project</a>
+                        <a href="#" class="see-project">See Project</a>
                     </div>
                 </div>
                 <div class="work-card">
@@ -105,7 +105,7 @@
                             <li>Javascript</li>
                             <li>Html</li>
                         </ul>
-                        <a href="#" class="btn-success">See Project</a>
+                        <a href="#" class="see-project">See Project</a>
                     </div>
                 </div>
                 <div class="work-card">
@@ -118,7 +118,7 @@
                             <li>Javascript</li>
                             <li>Html</li>
                         </ul>
-                        <a href="#" class="btn-success">See Project</a>
+                        <a href="#" class="see-project">See Project</a>
                     </div>
                 </div>
             </div>
@@ -130,13 +130,12 @@
                 <p class="section-desc"> I can help you build a product , feature or website Look through some of my
                     work and experience! If you like what you see and have a project you need coded,
                     don’t hestiate to contact me.</p>
-                    <a href="#" class="btn-success">Get my Resume</a>
+                    <a href="#" class="get-resume-btn">Get my Resume</a>
             </div>
+            
             <div id="tech-stack-list">
                 <div class="tech-stack">
-                    <div class="tech-stack-header">
-                        <img src="./assets/images/language.svg" alt="image"/>
-                    </div>
+                    <img src="./assets/images/language.svg" alt="image"/>
                     <div class="tech-stack-body">
                         <h3>Languages</h3>
                         <ul>
@@ -148,9 +147,7 @@
                     </div>
                 </div>
                 <div class="tech-stack">
-                    <div class="tech-stack-header">
-                        <img src="./assets/images/framework.svg" alt="image"/>
-                    </div>
+                    <img src="./assets/images/framework.svg" alt="image"/>
                     <div class="tech-stack-body">
                         <h3>Frameworks</h3>
                         <ul>
@@ -163,9 +160,7 @@
                     </div>
                 </div>
                 <div class="tech-stack">
-                    <div class="tech-stack-header">
-                        <img src="./assets/images/skills.svg" alt="image"/>
-                    </div>
+                    <img src="./assets/images/skills.svg" alt="image"/>
                     <div class="tech-stack-body">
                         <h3>Skills</h3>
                         <ul>
@@ -178,6 +173,7 @@
                     </div>
                 </div>
             </div>
+
         </section>
 
         <section id="contact-me">
@@ -191,8 +187,11 @@
                 <div class="grid-col-2">
                     <form action="https://formspree.io/f/xyyoovqy" method="post">
                         <div id="user-name">
-                            <div class="text-input full-name">
-                                <input type="text" name="fullname" placeholder="John Doe" id="full-name" required maxlength="30" />
+                            <div class="text-input first-name">
+                                <input type="text" name="firstname" placeholder="John" id="first-name" required maxlength="30" />
+                            </div>
+                            <div class="text-input last-name">
+                                <input type="text" name="lastname" placeholder="Doe" id="last-name" required maxlength="30" />
                             </div>
                         </div>
                         
@@ -206,7 +205,7 @@
                             </label>
                         </div>
                         <div>
-                            <button type="submit" class="btn-success">Get in touch</button>
+                            <button type="submit" class="btn-primary-dark">Get in touch</button>
                         </div>
                     </form>
                 </div>
