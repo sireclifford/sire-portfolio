@@ -330,25 +330,6 @@
     background-position: 0% 80%, 100% -63%;
   }
 
-  /* a.get-resume-btn {
-    padding: 12px;
-    background: #36b37f;
-    border-radius: 4px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: #fff;
-    margin-bottom: 50px;
-    cursor: pointer;
-    text-decoration: none;
-  } */
-
   .section-desc {
     width: 920px;
     height: 96px;
@@ -550,3 +531,11 @@
     color: #172b4d;
   }
 }
+
+.btn-three {
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+
+/* Put animation styles here */
