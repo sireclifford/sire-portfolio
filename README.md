@@ -11,9 +11,9 @@
 - CSS
 - Node.Js
 
-## Live Demo (if available)
+## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://sireclifford.github.io/sire-portfolio/)
 
 ## Getting Started
 
