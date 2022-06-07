@@ -11,12 +11,17 @@
 - CSS
 - Node.Js
 
+## Live Demo (if available)
 
+[Live Demo Link](https://livedemo.com)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-https://sireclifford.github.io/sire-portfolio/
+
+Use this https://github.com/sireclifford/sire-portfolio to clone the project
+
+Run the cloned project in the editor of your choice
 
 
 
