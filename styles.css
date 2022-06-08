@@ -85,7 +85,7 @@
   }
 
   #header-heading span {
-    color: #36b37f;
+    color: rgb(41, 135, 95);
   }
 
   #header-desc {
@@ -150,7 +150,7 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #36b37e;
+    color: rgb(41, 135, 95);
     list-style: none;
     background: white;
     border-radius: 8px;
@@ -246,8 +246,8 @@
   .btn-success {
     margin: 30px auto;
     padding: 12px;
-    border: 1px solid #36b37f;
-    background: #36b37f;
+    border: 1px solid  rgb(41, 135, 95);
+    background: rgb(41, 135, 95);
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
@@ -263,13 +263,13 @@
   }
 
   .btn-success:hover {
-    background: #36b37f;
+    background: rgb(41, 135, 95);
     box-shadow: 0 8px 16px rgba(54, 179, 127, 0.24);
     border-radius: 4px;
   }
 
   .btn-success:focus {
-    background: #008552;
+    background: rgb(41, 135, 95);
     border-radius: 4px;
   }
 
@@ -367,13 +367,6 @@
   }
 
   .tech-stack-body {
-    /* width: 300px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 49px;
-    margin-left: 49px; */
-
-    /* height: 222px; */
     width: 369px;
     padding: 16px 16px 24px 16px;
     display: flex;
