@@ -246,8 +246,8 @@
   .btn-success {
     margin: 30px auto;
     padding: 12px;
-    border: 1px solid  rgb(41, 135, 95);
-    background: rgb(41, 135, 95);
+    border: 1px solid  rgb(35, 133, 90);
+    background: rgb(35, 133, 90);
     border-radius: 4px;
     text-align: center;
     text-decoration: none;
@@ -355,7 +355,7 @@
     height: 352px;
   }
 
-  .tech-stack-body h3 {
+  .tech-stack-body h1 {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
