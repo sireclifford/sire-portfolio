@@ -150,9 +150,9 @@
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.03em;
-    color: #305A4B;
+    color: #305a4b;
     list-style: none;
-    background: #ffffff;
+    background: #fff;
     border-radius: 8px;
     padding: 10px;
     text-align: center;
@@ -382,6 +382,10 @@
     justify-content: center;
   }
 
+  #contact-me h1{
+    visibility: hidden;
+  }
+
   .contact-wrap {
     display: grid;
     grid-template-columns: 463px 684px;
@@ -566,4 +570,8 @@
 .btn-three:hover::after {
   opacity: 1;
   transform: scale(1, 1);
+}
+
+label {
+  visibility: hidden;
 }
