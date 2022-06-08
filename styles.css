@@ -229,7 +229,7 @@
     flex-direction: column;
   }
 
-  .card-body p {
+  .card-body h1 {
     width: 337px;
     height: 57px;
     font-family: 'Poppins', sans-serif;
