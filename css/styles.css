@@ -747,7 +747,6 @@
     list-style: none;
     font-family: "Inter", sans-serif;
     padding: 10px;
-    background: #ebf0ee;
     border-radius: 8px;
   }
 
@@ -1081,6 +1080,7 @@
     font-size: 28px;
     font-weight: bold;
     padding: 20px;
+    align-self: end;
   }
 
   .close:hover,
