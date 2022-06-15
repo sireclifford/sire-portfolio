@@ -14,19 +14,23 @@
       <header id="mobile-header">
         <nav class="top-nav pl-24 pr-24">
           <p>Welcome</p>
-          <img id="hamburger-icon" src="./assets/images/hamburger-icon.svg" alt="hamburger-icon" />
+          <img
+            id="hamburger-icon"
+            src="./assets/images/hamburger-icon.svg"
+            alt="hamburger-icon"
+          />
         </nav>
         <div id="mobile-header-content">
           <div id="mobile-header-heading" class="mr-24 ml-24">
             <p id="hero-name" class="mb-38">
-                Hey there. I’m Clifford.<br/>
-                <span>I’m a software developer</span>
+              Hey there. I’m Clifford.<br />
+              <span>I’m a software developer</span>
             </p>
             <p id="hero-desc" class="mb-38">
-                I can help you build a product , feature or website Look through
-                some of my work and experience! If you like what you see and have
-                a project you need coded, don’t hestiate to contact me.
-              </p>
+              I can help you build a product , feature or website Look through
+              some of my work and experience! If you like what you see and have
+              a project you need coded, don’t hestiate to contact me.
+            </p>
           </div>
           <div id="mobile-header-social">
             <ul>
@@ -42,7 +46,7 @@
             </ul>
           </div>
           <img
-            id="arrow-down"
+            class="arrow-down"
             src="../assets/images/arrow-down.svg"
             alt="arrow-down"
           />
@@ -78,12 +82,11 @@
           </ul>
         </div>
         <img
-          id="arrow-down"
+          class="arrow-down"
           src="../assets/images/arrow-down.svg"
           alt="arrow-down"
         />
       </header>
-
 
       <section id="recent-works">
         <h1 class="section-title">My Recent Works</h1>
@@ -238,14 +241,14 @@
           </div>
           <div class="grid-row-2">
             <form action="https://formspree.io/f/xyyoovqy" method="post">
-              <div id="user-name">
+              <div class="user-name">
                 <div class="text-input full-name">
-                  <label for="fullname">Name</label>
+                  <label for="full-name">Name</label>
                   <input
                     type="text"
-                    name="fullname"
+                    id="full-name"
                     placeholder="John Doe"
-                    id="fullname"
+                    class="fullname"
                     required
                     maxlength="30"
                   />
@@ -273,9 +276,7 @@
                 ></textarea>
               </div>
               <div>
-                <button type="submit" class="btn-success">
-                  Get in touch
-                </button>
+                <button type="submit" class="btn-success">Get in touch</button>
               </div>
             </form>
           </div>
@@ -284,7 +285,7 @@
 
       <section id="contact-me">
         <h1>Contact</h1>
-        <div class="mobile-contact-wrap">
+        <div class="contact-wrap">
           <div class="grid-col-1">
             <p>
               I'm always interested in hearing about new projects, so if you'd
@@ -293,7 +294,7 @@
           </div>
           <div class="grid-col-2">
             <form action="https://formspree.io/f/xyyoovqy" method="post">
-              <div id="user-name">
+              <div class="user-name">
                 <div class="text-input full-name">
                   <label for="fullname">Name</label>
                   <input
@@ -308,19 +309,19 @@
               </div>
 
               <div class="text-input user-email">
-                <label for="user-email">Email</label>
+                <label for="useremail">Email</label>
                 <input
                   type="email"
                   name="email"
                   placeholder="john.doe@mail.com"
-                  id="user-email"
+                  id="useremail"
                   required
                 />
               </div>
               <div class="text-input user-message">
-                <label for="msg">Message</label>
+                <label for="message">Message</label>
                 <textarea
-                  id="msg"
+                  id="message"
                   name="user-message"
                   placeholder="Enter your message here..."
                   maxlength="500"
@@ -328,9 +329,7 @@
                 ></textarea>
               </div>
               <div>
-                <button type="submit" class="btn-success">
-                  Get in touch
-                </button>
+                <button type="submit" class="btn-success">Get in touch</button>
               </div>
             </form>
           </div>
@@ -350,24 +349,25 @@
 
     <!-- modal -->
     <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="project-modal-content">
-          <span class="close">&times;</span>
-          <nav id="menu">
-            <ul class="menu-list">
-                <li>
-                  <a id="projects-link">Portfolio</a>
-                </li>
-                <li>
-                  <a id="about-link">About</a>
-                </li>
-                <li>
-                  <a id="getting-started-link">Contact</a>
-                </li>
-              </ul>
-          </nav>
-          
+      <!-- Modal content -->
+      <div class="project-modal-content">
+        <span class="close">&times;</span>
+        <nav id="menu">
+          <ul class="menu-list">
+            <li>
+              <a id="projects-link">Portfolio</a>
+            </li>
+            <li>
+              <a id="about-link">About</a>
+            </li>
+            <li>
+              <a id="getting-started-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </div>
+
     <script src="./scripts/index.js"></script>
   </body>
 </html>
