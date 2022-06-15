@@ -1,234 +1,373 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio | Remote Full Stack Developer</title>
-    <link rel="stylesheet" href="./styles.css" />
-</head>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<body>
+  <body>
     <div id="wrap">
-        <header>
-            <nav class="top-nav">
-                <ul>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-            <div id="header-heading">
-                Hey there. I’m Clifford.
+      <!-- Mobile Header begins-->
+      <header id="mobile-header">
+        <nav class="top-nav pl-24 pr-24">
+          <p>Welcome</p>
+          <img id="hamburger-icon" src="./assets/images/hamburger-icon.svg" alt="hamburger-icon" />
+        </nav>
+        <div id="mobile-header-content">
+          <div id="mobile-header-heading" class="mr-24 ml-24">
+            <p id="hero-name" class="mb-38">
+                Hey there. I’m Clifford.<br/>
                 <span>I’m a software developer</span>
-            </div>
-            <div id="header-desc">
-                <p> I can help you build a product , feature or website Look through some of my work and experience! If
-                    you like what you see and have a project you need coded,
-                    don’t hestiate to contact me.</p>
-            </div>
-            <div id="header-social">
-                <ul>
-                    <li><img src="./assets/images/github.svg" alt="github" /></li>
-                    <li><img src="./assets/images/linkedin.svg" alt="linkedin" /></li>
-                    <li><img src="./assets/images/angelist.svg" alt="angelist" /></li>
-                    <li><img src="./assets/images/twitter.svg" alt="twitter" /></li>
-                    <li><img src="./assets/images/medium.svg" alt="medium" /></li>
-                </ul>
-
-            </div>
-            <img id="arrow-down" src="./assets/images/arrow-down.svg" alt="arrow-down" />
-        </header>
-        <section id="recent-works">
-            <h1 class="section-title">My Recent Works</h1>
-            <div class="recent-work-list">
-                <div class="work-card">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h1>Multi-Post Stories Gain+Glory</h1>
-                        <ul>
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Html</li>
-                        </ul>
-                        <a href="#" class="btn-success btn-three">See Project</a>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h1>Multi-Post Stories Gain+Glory</h1>
-                        <ul>
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Html</li>
-                        </ul>
-                        <a href="#" class="btn-success btn-three">See Project</a>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h1>Multi-Post Stories Gain+Glory</h1>
-                        <ul>
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Html</li>
-                        </ul>
-                        <a href="#" class="btn-success btn-three">See Project</a>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h1>Multi-Post Stories Gain+Glory</h1>
-                        <ul>
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Html</li>
-                        </ul>
-                        <a href="#" class="btn-success btn-three">See Project</a>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h1>Multi-Post Stories Gain+Glory</h1>
-                        <ul>
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Html</li>
-                        </ul>
-                        <a href="#" class="btn-success btn-three">See Project</a>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h1>Multi-Post Stories Gain+Glory</h1>
-                        <ul>
-                            <li>Ruby on Rails</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                            <li>Html</li>
-                        </ul>
-                        <a href="#" class="btn-success btn-three">See Project</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="about-me">
-            <div id="about-me-info">
-                <h1 class="section-title">About me</h1>
-                <p class="section-desc"> I can help you build a product , feature or website Look through some of my
-                    work and experience! If you like what you see and have a project you need coded,
-                    don’t hestiate to contact me.</p>
-                <a href="#" class="btn-success btn-three">Get my Resume</a>
-            </div>
-            <div id="tech-stack-list">
-                <div class="tech-stack">
-                    <div class="tech-stack-header">
-                        <img src="./assets/images/language.svg" alt="language" />
-                    </div>
-                    <div class="tech-stack-body">
-                        <h1>Languages</h1>
-                        <ul>
-                            <li>Javascript</li>
-                            <li>Ruby</li>
-                            <li>Html</li>
-                            <li>CSS</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tech-stack">
-                    <div class="tech-stack-header">
-                        <img src="./assets/images/framework.svg" alt="framework" />
-                    </div>
-                    <div class="tech-stack-body">
-                        <h1>Frameworks</h1>
-                        <ul>
-                            <li>Bootstrap</li>
-                            <li>Ruby on Rails</li>
-                            <li>Rspec</li>
-                            <li>Capybara</li>
-                            <li>Selenium</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="tech-stack">
-                    <div class="tech-stack-header">
-                        <img src="./assets/images/skills.svg" alt="skills" />
-                    </div>
-                    <div class="tech-stack-body">
-                        <h1>Skills</h1>
-                        <ul>
-                            <li>Codekit</li>
-                            <li>Github</li>
-                            <li>Codepen</li>
-                            <li>Gitlab</li>
-                            <li>Terminal</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact-me">
-            <h1>Contact</h1>
-            <div class="contact-wrap">
-                <div class="grid-col-1">
-                    <p>I'm always interested in hearing about
-                        new projects, so if you'd like to chat
-                        please get in touch.
-                    </p>
-                </div>
-                <div class="grid-col-2">
-                    <form action="https://formspree.io/f/xyyoovqy" method="post">
-                        <div id="user-name">
-                            <div class="text-input full-name">
-                                <label for="fullname">Name</label>
-                                <input type="text" name="fullname" placeholder="John Doe" id="fullname" required
-                                    maxlength="30" />
-                            </div>
-                        </div>
-
-                        <div class="text-input user-email">
-                            <label for="user-email">Email</label>
-                            <input type="email" name="email" placeholder="john.doe@mail.com" id="user-email" required />
-                        </div>
-                        <div class="text-input user-message">
-                            <label for="msg">Message</label>
-                            <textarea id="msg" name="user-message" placeholder="Enter your message here..."
-                                maxlength="500" required></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" class="btn-success btn-three">Get in touch</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-        </section>
-
-        <footer id="footer-social">
+            </p>
+            <p id="hero-desc" class="mb-38">
+                I can help you build a product , feature or website Look through
+                some of my work and experience! If you like what you see and have
+                a project you need coded, don’t hestiate to contact me.
+              </p>
+          </div>
+          <div id="mobile-header-social">
             <ul>
-                <li><img src="./assets/images/github.svg" alt="github" /></li>
-                <li><img src="./assets/images/linkedin.svg" alt="linkedin" /></li>
-                <li><img src="./assets/images/angelist.svg" alt="angelist" /></li>
-                <li><img src="./assets/images/twitter.svg" alt="twitter" /></li>
-                <li><img src="./assets/images/medium.svg" alt="medium" /></li>
+              <li><img src="../assets/images/github.svg" alt="github" /></li>
+              <li>
+                <img src="../assets/images/linkedin.svg" alt="linkedin" />
+              </li>
+              <li>
+                <img src="../assets/images/angelist.svg" alt="angelist" />
+              </li>
+              <li><img src="../assets/images/twitter.svg" alt="twitter" /></li>
+              <li><img src="../assets/images/medium.svg" alt="medium" /></li>
             </ul>
-        </footer>
+          </div>
+          <img
+            id="arrow-down"
+            src="../assets/images/arrow-down.svg"
+            alt="arrow-down"
+          />
+        </div>
+      </header>
+      <!-- Mobile header ends -->
+      <header id="desktop-header">
+        <nav class="top-nav">
+          <ul>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div id="header-heading">
+          Hey there. I’m Clifford.
+          <span>I’m a software developer</span>
+        </div>
+        <div id="header-desc">
+          <p>
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+        </div>
+        <div id="header-social">
+          <ul>
+            <li><img src="../assets/images/github.svg" alt="github" /></li>
+            <li><img src="../assets/images/linkedin.svg" alt="linkedin" /></li>
+            <li><img src="../assets/images/angelist.svg" alt="angelist" /></li>
+            <li><img src="../assets/images/twitter.svg" alt="twitter" /></li>
+            <li><img src="../assets/images/medium.svg" alt="medium" /></li>
+          </ul>
+        </div>
+        <img
+          id="arrow-down"
+          src="../assets/images/arrow-down.svg"
+          alt="arrow-down"
+        />
+      </header>
+
+
+      <section id="recent-works">
+        <h1 class="section-title">My Recent Works</h1>
+        <div class="recent-work-list">
+          <div class="work-card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <h1>Multi-Post Stories Gain+Glory</h1>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Html</li>
+              </ul>
+              <a href="#" class="btn-success btn-three">See Project</a>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <h1>Multi-Post Stories Gain+Glory</h1>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Html</li>
+              </ul>
+              <a href="#" class="btn-success btn-three">See Project</a>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <h1>Multi-Post Stories Gain+Glory</h1>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Html</li>
+              </ul>
+              <a href="#" class="btn-success btn-three">See Project</a>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <h1>Multi-Post Stories Gain+Glory</h1>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Html</li>
+              </ul>
+              <a href="#" class="btn-success btn-three">See Project</a>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <h1>Multi-Post Stories Gain+Glory</h1>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Html</li>
+              </ul>
+              <a href="#" class="btn-success btn-three">See Project</a>
+            </div>
+          </div>
+          <div class="work-card">
+            <div class="card-header"></div>
+            <div class="card-body">
+              <h1>Multi-Post Stories Gain+Glory</h1>
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Html</li>
+              </ul>
+              <a href="#" class="btn-success btn-three">See Project</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about-me">
+        <div id="about-me-info">
+          <h1 class="section-title">About me</h1>
+          <p class="section-desc">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don’t hestiate to contact me.
+          </p>
+          <a href="#" class="btn-success btn-three">Get my Resume</a>
+        </div>
+        <div id="tech-stack-list">
+          <div class="tech-stack">
+            <div class="tech-stack-header">
+              <img src="../assets/images/language.svg" alt="language" />
+            </div>
+            <div class="tech-stack-body">
+              <h1>Languages</h1>
+              <ul>
+                <li>Javascript</li>
+                <li>Ruby</li>
+                <li>Html</li>
+                <li>CSS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <div class="tech-stack-header">
+              <img src="../assets/images/framework.svg" alt="framework" />
+            </div>
+            <div class="tech-stack-body">
+              <h1>Frameworks</h1>
+              <ul>
+                <li>Bootstrap</li>
+                <li>Ruby on Rails</li>
+                <li>Rspec</li>
+                <li>Capybara</li>
+                <li>Selenium</li>
+              </ul>
+            </div>
+          </div>
+          <div class="tech-stack">
+            <div class="tech-stack-header">
+              <img src="../assets/images/skills.svg" alt="skills" />
+            </div>
+            <div class="tech-stack-body">
+              <h1>Skills</h1>
+              <ul>
+                <li>Codekit</li>
+                <li>Github</li>
+                <li>Codepen</li>
+                <li>Gitlab</li>
+                <li>Terminal</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="mobile-contact-me">
+        <h1>Contact</h1>
+        <div class="contact-wrap">
+          <div class="grid-row-1">
+            <p>
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </p>
+          </div>
+          <div class="grid-row-2">
+            <form action="https://formspree.io/f/xyyoovqy" method="post">
+              <div id="user-name">
+                <div class="text-input full-name">
+                  <label for="fullname">Name</label>
+                  <input
+                    type="text"
+                    name="fullname"
+                    placeholder="John Doe"
+                    id="fullname"
+                    required
+                    maxlength="30"
+                  />
+                </div>
+              </div>
+
+              <div class="text-input user-email">
+                <label for="user-email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="john.doe@mail.com"
+                  id="user-email"
+                  required
+                />
+              </div>
+              <div class="text-input user-message">
+                <label for="msg">Message</label>
+                <textarea
+                  id="msg"
+                  name="user-message"
+                  placeholder="Enter your message here..."
+                  maxlength="500"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn-success">
+                  Get in touch
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact-me">
+        <h1>Contact</h1>
+        <div class="mobile-contact-wrap">
+          <div class="grid-col-1">
+            <p>
+              I'm always interested in hearing about new projects, so if you'd
+              like to chat please get in touch.
+            </p>
+          </div>
+          <div class="grid-col-2">
+            <form action="https://formspree.io/f/xyyoovqy" method="post">
+              <div id="user-name">
+                <div class="text-input full-name">
+                  <label for="fullname">Name</label>
+                  <input
+                    type="text"
+                    name="fullname"
+                    placeholder="John Doe"
+                    id="fullname"
+                    required
+                    maxlength="30"
+                  />
+                </div>
+              </div>
+
+              <div class="text-input user-email">
+                <label for="user-email">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="john.doe@mail.com"
+                  id="user-email"
+                  required
+                />
+              </div>
+              <div class="text-input user-message">
+                <label for="msg">Message</label>
+                <textarea
+                  id="msg"
+                  name="user-message"
+                  placeholder="Enter your message here..."
+                  maxlength="500"
+                  required
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn-success">
+                  Get in touch
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer id="footer-social">
+        <ul>
+          <li><img src="../assets/images/github.svg" alt="github" /></li>
+          <li><img src="../assets/images/linkedin.svg" alt="linkedin" /></li>
+          <li><img src="../assets/images/angelist.svg" alt="angelist" /></li>
+          <li><img src="../assets/images/twitter.svg" alt="twitter" /></li>
+          <li><img src="../assets/images/medium.svg" alt="medium" /></li>
+        </ul>
+      </footer>
     </div>
 
-
-</body>
-
+    <!-- modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="project-modal-content">
+          <span class="close">&times;</span>
+          <nav id="menu">
+            <ul class="menu-list">
+                <li>
+                  <a id="projects-link">Portfolio</a>
+                </li>
+                <li>
+                  <a id="about-link">About</a>
+                </li>
+                <li>
+                  <a id="getting-started-link">Contact</a>
+                </li>
+              </ul>
+          </nav>
+          
+      </div>
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>
