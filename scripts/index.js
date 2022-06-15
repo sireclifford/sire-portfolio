@@ -12,6 +12,20 @@ window.onclick = (event) => {
     modal.style.display = 'none';
   }
 };
+
+const singleProjectModal = document.getElementById('single-project-modal');
+const singleProjectBtn = document.querySelector('#single-project-btn');
+singleProjectBtn.addEventListener('click', () => {
+  singleProjectModal.style.display = 'block';
+})
+
+window.onclick = (event) => {
+  if (event.target === modal) {
+    singleProjectModal.style.display = 'none';
+  }
+};
+
+
 const GotoProjects = () => {
   const projectsLink = document.querySelector('#projects-link');
   projectsLink.addEventListener('click', () => {

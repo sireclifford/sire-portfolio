@@ -34,20 +34,20 @@
           </div>
           <div id="mobile-header-social">
             <ul>
-              <li><img src="../assets/images/github.svg" alt="github" /></li>
+              <li><img src="./assets/images/github.svg" alt="github" /></li>
               <li>
-                <img src="../assets/images/linkedin.svg" alt="linkedin" />
+                <img src="./assets/images/linkedin.svg" alt="linkedin" />
               </li>
               <li>
-                <img src="../assets/images/angelist.svg" alt="angelist" />
+                <img src="./assets/images/angelist.svg" alt="angelist" />
               </li>
-              <li><img src="../assets/images/twitter.svg" alt="twitter" /></li>
-              <li><img src="../assets/images/medium.svg" alt="medium" /></li>
+              <li><img src="./assets/images/twitter.svg" alt="twitter" /></li>
+              <li><img src="./assets/images/medium.svg" alt="medium" /></li>
             </ul>
           </div>
           <img
             class="arrow-down"
-            src="../assets/images/arrow-down.svg"
+            src="./assets/images/arrow-down.svg"
             alt="arrow-down"
           />
         </div>
@@ -74,16 +74,16 @@
         </div>
         <div id="header-social">
           <ul>
-            <li><img src="../assets/images/github.svg" alt="github" /></li>
-            <li><img src="../assets/images/linkedin.svg" alt="linkedin" /></li>
-            <li><img src="../assets/images/angelist.svg" alt="angelist" /></li>
-            <li><img src="../assets/images/twitter.svg" alt="twitter" /></li>
-            <li><img src="../assets/images/medium.svg" alt="medium" /></li>
+            <li><img src="./assets/images/github.svg" alt="github" /></li>
+            <li><img src="./assets/images/linkedin.svg" alt="linkedin" /></li>
+            <li><img src="./assets/images/angelist.svg" alt="angelist" /></li>
+            <li><img src="./assets/images/twitter.svg" alt="twitter" /></li>
+            <li><img src="./assets/images/medium.svg" alt="medium" /></li>
           </ul>
         </div>
         <img
           class="arrow-down"
-          src="../assets/images/arrow-down.svg"
+          src="./assets/images/arrow-down.svg"
           alt="arrow-down"
         />
       </header>
@@ -101,7 +101,9 @@
                 <li>Javascript</li>
                 <li>Html</li>
               </ul>
-              <a href="#" class="btn-success btn-three">See Project</a>
+              <a id="single-project-btn" href="#" class="btn-success btn-three"
+                >See Project</a
+              >
             </div>
           </div>
           <div class="work-card">
@@ -114,7 +116,9 @@
                 <li>Javascript</li>
                 <li>Html</li>
               </ul>
-              <a href="#" class="btn-success btn-three">See Project</a>
+              <a id="single-project-btn" href="#" class="btn-success btn-three"
+                >See Project</a
+              >
             </div>
           </div>
           <div class="work-card">
@@ -185,7 +189,7 @@
         <div id="tech-stack-list">
           <div class="tech-stack">
             <div class="tech-stack-header">
-              <img src="../assets/images/language.svg" alt="language" />
+              <img src="./assets/images/language.svg" alt="language" />
             </div>
             <div class="tech-stack-body">
               <h1>Languages</h1>
@@ -199,7 +203,7 @@
           </div>
           <div class="tech-stack">
             <div class="tech-stack-header">
-              <img src="../assets/images/framework.svg" alt="framework" />
+              <img src="./assets/images/framework.svg" alt="framework" />
             </div>
             <div class="tech-stack-body">
               <h1>Frameworks</h1>
@@ -214,7 +218,7 @@
           </div>
           <div class="tech-stack">
             <div class="tech-stack-header">
-              <img src="../assets/images/skills.svg" alt="skills" />
+              <img src="./assets/images/skills.svg" alt="skills" />
             </div>
             <div class="tech-stack-body">
               <h1>Skills</h1>
@@ -338,11 +342,11 @@
 
       <footer id="footer-social">
         <ul>
-          <li><img src="../assets/images/github.svg" alt="github" /></li>
-          <li><img src="../assets/images/linkedin.svg" alt="linkedin" /></li>
-          <li><img src="../assets/images/angelist.svg" alt="angelist" /></li>
-          <li><img src="../assets/images/twitter.svg" alt="twitter" /></li>
-          <li><img src="../assets/images/medium.svg" alt="medium" /></li>
+          <li><img src="./assets/images/github.svg" alt="github" /></li>
+          <li><img src="./assets/images/linkedin.svg" alt="linkedin" /></li>
+          <li><img src="./assets/images/angelist.svg" alt="angelist" /></li>
+          <li><img src="./assets/images/twitter.svg" alt="twitter" /></li>
+          <li><img src="./assets/images/medium.svg" alt="medium" /></li>
         </ul>
       </footer>
     </div>
@@ -365,6 +369,45 @@
             </li>
           </ul>
         </nav>
+      </div>
+    </div>
+
+    <div id="single-project-modal" class="modal">
+      <span class="close">&times;</span>
+      <!-- Modal content -->
+      <div class="project-modal-content">
+        <img
+          class="single-project-pic"
+          src="./assets/images/project-image.png"
+          alt="project-img"
+        />
+        <p class="single-project-title">
+          Keeping track of hundreds of components
+        </p>
+        <ul>
+          <li>Ruby on Rails</li>
+          <li>Css</li>
+          <li>Javascript</li>
+        </ul>
+        <p class="single-project-desc">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it 1960s with the releaLorem Ipsum is simply dummy text of
+          the printing and typesetting industry. Lorem Ipsum has been the
+          industry's standard dummy text ever since the 1500s, when an unknown
+          printer took a galley of type and scrambled it 1960s with the relea
+        </p>
+        <div class="single-project-btns">
+          <div class="see-more" class="myBtn">
+            <a>See this project </a>
+            <img src="./assets/images/see-live.svg" alt="right arrow icon" />
+          </div>
+          <div class="see-more" class="myBtn">
+            <a>See this project </a>
+            <img src="./assets/images/github-white.svg" alt="right arrow icon" />
+          </div>
+        </div>
       </div>
     </div>
 
