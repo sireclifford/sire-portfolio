@@ -1,21 +1,41 @@
 const emailInput = document.querySelector('#user-email');
 const form = document.querySelector('#signup');
 
-const showErrorMsg = (input, message) => {
-  const error = document.querySelector('small');
+const destopForm = document.querySelector('#desktopSignup');
+const userEmail = document.querySelector('#useremail');
+
+const showErrorMsg = (type) => {
+  const error = type === 'mobile' ? document.querySelectorAll('small')[0] : document.querySelectorAll('small')[1];
   error.style.color = 'red';
   error.marginTop = '8px';
-  error.textContent = message;
+  error.textContent = 'email address should be in lowercase';
 };
 
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
+const showSuccessMsg = () => {
+  const sucess = document.querySelector('small');
+  sucess.style.color = 'green';
+  sucess.marginTop = '8px';
+  sucess.textContent = 'Thank you!';
+};
 
+destopForm.addEventListener('submit', (e) => {
+  const email = userEmail.value.trim();
+  const convertedEmail = email.toLowerCase();
+  if (email !== convertedEmail) {
+    showErrorMsg('desktop');
+    e.preventDefault();
+  } else {
+    showSuccessMsg();
+  }
+});
+
+form.addEventListener('submit', (e) => {
   const email = emailInput.value.trim();
   const convertedEmail = email.toUpperCase();
   if (email === convertedEmail) {
-    showErrorMsg(emailInput, 'email address should be in lowercase');
+    showErrorMsg('mobile');
+    e.preventDefault();
   } else {
-    form.submit();
+    showSuccessMsg();
   }
 });
