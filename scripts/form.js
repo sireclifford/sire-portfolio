@@ -20,8 +20,8 @@ const showSuccessMsg = () => {
 
 destopForm.addEventListener('submit', (e) => {
   const email = userEmail.value.trim();
-  const convertedEmail = email.toUpperCase();
-  if (email === convertedEmail) {
+  const convertedEmail = email.toLowerCase();
+  if (email !== convertedEmail) {
     showErrorMsg('desktop');
     e.preventDefault();
   } else {
