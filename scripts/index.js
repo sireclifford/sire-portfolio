@@ -106,7 +106,25 @@ const loadRecentWork = () => {
   work.appendChild(fragment);
 
   // Place scripts here
-  
+  const singleProjectModal = document.querySelector('#single-project-modal');
+  const singleProjectBtn = document.querySelectorAll('.single-project-btn');
+  singleProjectBtn.forEach((btn) => {
+    btn.addEventListener('click', (event) => {
+      const foundProject = portfolioData.filter((x) => String(x.id) === event.target.id);
+      document.getElementsByClassName('single-project-pic')[0].src = foundProject[0].image;
+      document.getElementsByClassName('single-project-pic')[0].alt = foundProject[0].title;
+      document.getElementsByClassName('single-project-title')[0].innerHTML = foundProject[0].title;
+      document.getElementsByClassName('single-project-skills')[0].innerHTML = foundProject[0].skills.map((item) => `<li>${item}</li>`).join('');
+      document.getElementsByClassName('single-project-desc')[0].innerHTML = foundProject[0].description;
+      document.getElementsByClassName('project-source')[0].href = foundProject[0].source;
+      singleProjectModal.style.display = 'block';
+      const close = document.getElementsByClassName('close-popup')[0];
+      close.onclick = () => {
+        singleProjectModal.style.display = 'none';
+        range.detach();
+      };
+    }, true);
+  });
 
   const desktopModal = document.querySelector('.desktop-modal');
 
