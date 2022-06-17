@@ -13,6 +13,134 @@
     display: none;
   }
 
+  .desktop-modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    bottom: 40px;
+    background-color: rgba(140, 133, 137, 0.8);
+    backdrop-filter: blur(4px);
+    height: 100%;
+  }
+
+  .desktop-project-modal-content {
+    display: flex;
+    position: fixed;
+    width: 800px;
+    top: 40px;
+    left: calc(50% - 400px);
+    bottom: 40px;
+    z-index: 100;
+    background: #fff;
+    max-height: 90%;
+    overflow-y: scroll;
+    padding: 0 24px 24px 24px;
+    border: 1px solid #c1c7d0;
+    flex-direction: column;
+  }
+
+  .desktop-single-portfolio-image {
+    max-width: 800px;
+  }
+
+  .desktop-single-project-btns {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+  }
+
+  .see-more {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    width: 115px;
+    border-radius: 8px;
+    padding: 10px;
+    background: #36b37f;
+    align-items: center;
+  }
+
+  .see-more a {
+    height: 24px;
+    width: 124px;
+    color: white;
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  .see-more img {
+    width: 20.57px;
+    height: 15.35px;
+    align-self: center;
+  }
+
+  ul.desktop-single-project-skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 0;
+  }
+
+  ul.desktop-single-project-skills li {
+    list-style: none;
+    background: #c1c7d0;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #344563;
+  }
+
+  .desktop-single-project-desc {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: #344563;
+  }
+
+  .desktop-single-project-pic {
+    width: 100%;
+  }
+
+  .desktop-single-project-title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .desktop-single-project-title p {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #172b4d;
+    width: 60%;
+    margin: 0;
+  }
+
+  span.desktop-close-popup {
+    align-self: end;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
   header {
     background-image: url(../assets/images/header-bg.png);
     background-repeat: no-repeat;
@@ -119,10 +247,11 @@
 
   .card-body ul {
     display: flex;
-    gap: 20px;
+    gap: 8px;
     justify-content: center;
     padding: 0;
     margin: 0;
+    flex-wrap: wrap;
   }
 
   .card-body ul li {
@@ -204,7 +333,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ebf0ee;
+    border-bottom: 1px solid #ebf0ee;
     height: 252px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -225,7 +354,7 @@
   }
 
   .card-body {
-    height: 222px;
+    height: fit-content;
     width: 369px;
     padding: 16px 16px 24px 16px;
     display: flex;
@@ -242,7 +371,7 @@
     line-height: 32px;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     color: #172b4d;
   }
 
@@ -689,8 +818,9 @@
 
   .card-body ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     gap: 8px;
+    flex-wrap: wrap;
     padding: 0;
   }
 
@@ -732,6 +862,7 @@
     display: flex;
     gap: 10px;
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   #footer-social ul {
@@ -743,7 +874,28 @@
     width: 170px;
   }
 
-  .project-modal-content ul li {
+  .single-project-skills {
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  ul.single-project-skills li {
+    background: #ebf0ee;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .single-project-modal ul li {
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    background: #ebf0ee;
+  }
+
+  ul.menu-list li {
     list-style: none;
     font-family: "Inter", sans-serif;
     padding: 10px;
@@ -828,13 +980,15 @@
   .work-card {
     display: grid;
     grid-template-rows: 252px auto;
-    background: #ebf0ee;
+
+    /* background: #ebf0ee; */
     border-radius: 8px;
     border: 2px solid #ebf0ee;
   }
 
   .card-header {
     grid-row: 1;
+    height: 250px;
   }
 
   .card-body {
@@ -844,9 +998,7 @@
     align-items: center;
     padding: 16px;
     gap: 16px;
-
-    /* width: 327px; */
-    height: 222px;
+    height: fit-content;
     bottom: 0;
     background: #fff;
     border-radius: 8px;
@@ -862,7 +1014,7 @@
     line-height: 32px;
     display: flex;
     align-items: center;
-    text-align: center;
+    justify-content: center;
     color: #3a4a42;
   }
 
@@ -1083,6 +1235,18 @@
     align-self: end;
   }
 
+  .close-popup {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    top: -3%;
+    right: 4%;
+    cursor: pointer;
+  }
+
   .close:hover,
   .close:focus {
     color: black;
@@ -1165,4 +1329,13 @@
     height: 15.35px;
     align-self: center;
   }
+
+  .desktop-modal {
+    display: none; /* Hidden by default */
+  }
+}
+
+.card-header img {
+  width: 100%;
+  height: 100%;
 }

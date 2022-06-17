@@ -90,97 +90,14 @@
 
       <section id="recent-works">
         <h1 class="section-title">My Recent Works</h1>
-        <div class="recent-work-list">
-          <div class="work-card">
-            <div class="card-header"></div>
-            <div class="card-body">
-              <h1>Multi-Post Stories Gain+Glory</h1>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Html</li>
-              </ul>
-              <a href="#" class="btn-success btn-three single-project-btn"
-                >See Project</a
-              >
-            </div>
-          </div>
-          <div class="work-card">
-            <div class="card-header"></div>
-            <div class="card-body">
-              <h1>Multi-Post Stories Gain+Glory</h1>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Html</li>
-              </ul>
-              <a  href="#" class="btn-success btn-three single-project-btn"
-                >See Project</a
-              >
-            </div>
-          </div>
-          <div class="work-card">
-            <div class="card-header"></div>
-            <div class="card-body">
-              <h1>Multi-Post Stories Gain+Glory</h1>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Html</li>
-              </ul>
-              <a href="#" class="btn-success btn-three">See Project</a>
-            </div>
-          </div>
-          <div class="work-card">
-            <div class="card-header"></div>
-            <div class="card-body">
-              <h1>Multi-Post Stories Gain+Glory</h1>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Html</li>
-              </ul>
-              <a href="#" class="btn-success btn-three">See Project</a>
-            </div>
-          </div>
-          <div class="work-card">
-            <div class="card-header"></div>
-            <div class="card-body">
-              <h1>Multi-Post Stories Gain+Glory</h1>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Html</li>
-              </ul>
-              <a href="#" class="btn-success btn-three">See Project</a>
-            </div>
-          </div>
-          <div class="work-card">
-            <div class="card-header"></div>
-            <div class="card-body">
-              <h1>Multi-Post Stories Gain+Glory</h1>
-              <ul>
-                <li>Ruby on Rails</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>Html</li>
-              </ul>
-              <a href="#" class="btn-success btn-three">See Project</a>
-            </div>
-          </div>
-        </div>
+        <div class="recent-work-list"></div>
       </section>
 
       <section id="about-me">
         <div id="about-me-info">
           <h1 class="section-title">About me</h1>
           <p class="section-desc">
-            I can help you build a product , feature or website Look through
+            I can help you build a product, feature or website Look through
             some of my work and experience! If you like what you see and have a
             project you need coded, don’t hestiate to contact me.
           </p>
@@ -244,7 +161,7 @@
             </p>
           </div>
           <div class="grid-row-2">
-            <form action="https://formspree.io/f/xyyoovqy" method="post">
+            <form action="https://formspree.io/f/xyyoovqy" method="post" id="signup" name="contact-form">
               <div class="user-name">
                 <div class="text-input full-name">
                   <label for="full-name">Name</label>
@@ -268,6 +185,7 @@
                   id="user-email"
                   required
                 />
+                
               </div>
               <div class="text-input user-message">
                 <label for="msg">Message</label>
@@ -282,6 +200,7 @@
               <div>
                 <button type="submit" class="btn-success">Get in touch</button>
               </div>
+              <small></small>
             </form>
           </div>
         </div>
@@ -297,7 +216,7 @@
             </p>
           </div>
           <div class="grid-col-2">
-            <form action="https://formspree.io/f/xyyoovqy" method="post">
+            <form action="https://formspree.io/f/xyyoovqy" method="post" id="#signup" name="contact-form">
               <div class="user-name">
                 <div class="text-input full-name">
                   <label for="fullname">Name</label>
@@ -321,6 +240,7 @@
                   id="useremail"
                   required
                 />
+                
               </div>
               <div class="text-input user-message">
                 <label for="message">Message</label>
@@ -334,6 +254,7 @@
               </div>
               <div>
                 <button type="submit" class="btn-success">Get in touch</button>
+                <small></small>
               </div>
             </form>
           </div>
@@ -372,35 +293,24 @@
       </div>
     </div>
 
+    <!-- Insert single project modal -->
     <div id="single-project-modal" class="modal">
-      <span class="close">&times;</span>
+      <span class="close-popup">&times;</span>
       <!-- Modal content -->
       <div class="project-modal-content">
-        <img
-          class="single-project-pic"
-          src="./assets/images/project-image.png"
-          alt="project-img"
-        />
+        <img src="." alt="" class="single-project-pic"/>
         <p class="single-project-title">
-          Keeping track of hundreds of components
+         
         </p>
-        <ul>
-          <li>Ruby on Rails</li>
-          <li>Css</li>
-          <li>Javascript</li>
+        <ul class="single-project-skills">
+       
         </ul>
         <p class="single-project-desc">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it 1960s with the releaLorem Ipsum is simply dummy text of
-          the printing and typesetting industry. Lorem Ipsum has been the
-          industry's standard dummy text ever since the 1500s, when an unknown
-          printer took a galley of type and scrambled it 1960s with the relea
+         
         </p>
         <div class="single-project-btns">
           <div class="see-more myBtn">
-            <a>See this project </a>
+            <a class="project-source">See live </a>
             <img src="./assets/images/see-live.svg" alt="right arrow icon" />
           </div>
           <div class="see-more myBtn">
@@ -409,8 +319,36 @@
           </div>
         </div>
       </div>
+    </div> 
+    
+    <!-- Iinsert desktop single project modal -->
+    <div id="desktop-single-project-modal" class="desktop-modal">
+      <!-- Modal content -->
+      <div class="desktop-project-modal-content">
+        <span class="desktop-close-popup">&times;</span>
+        <div class="desktop-single-portfolio-image">
+          <img src="." alt="" class="desktop-single-project-pic"/>
+        </div>
+        <div class="desktop-single-project-title">
+          <p class="desktop-single-project-title"></p>
+          <div class="desktop-single-project-btns">
+            <div class="see-more myBtn">
+              <a class="project-source">See live </a>
+              <img src="./assets/images/see-live.svg" alt="right arrow icon" />
+            </div>
+            <div class="see-more myBtn">
+              <a>See source </a>
+              <img src="./assets/images/github-white.svg" alt="right arrow icon" />
+            </div>
+          </div>
+        </div>
+        <ul class="desktop-single-project-skills">
+        </ul>
+        <p class="desktop-single-project-desc">
+        </p>
+      </div>
     </div>
-
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/form.js"></script>
   </body>
 </html>
