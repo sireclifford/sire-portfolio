@@ -98,43 +98,22 @@ const loadRecentWork = () => {
         >
       </div>
     </div>`).join('');
-  // create a virtual container
+
   const range = document.createRange();
-  // give it a context
+
   range.selectNode(work);
-  // add the html, this converts the html into a collection of elements
   const fragment = range.createContextualFragment(projects);
-  // append the elements to the document
   work.appendChild(fragment);
 
-  // add event listener to each project
-  const singleProjectModal = document.querySelector('#single-project-modal');
-  const singleProjectBtn = document.querySelectorAll('.single-project-btn');
-  singleProjectBtn.forEach((btn) => {
-    btn.addEventListener('click', (event) => {
-      const foundProject = portfolioData.filter((x) => String(x.id) === event.target.id);
-      document.getElementsByClassName('single-project-pic')[0].src = foundProject[0].image;
-      document.getElementsByClassName('single-project-pic')[0].alt = foundProject[0].title;
-      document.getElementsByClassName('single-project-title')[0].innerHTML = foundProject[0].title;
-      document.getElementsByClassName('single-project-skills')[0].innerHTML = foundProject[0].skills.map((item) => `<li>${item}</li>`).join('');
-      document.getElementsByClassName('single-project-desc')[0].innerHTML = foundProject[0].description;
-      document.getElementsByClassName('project-source')[0].href = foundProject[0].source;
-      singleProjectModal.style.display = 'block';
-
-      const close = document.getElementsByClassName('close-popup')[0];
-      close.onclick = () => {
-        singleProjectModal.style.display = 'none';
-        range.detach();
-      };
-    }, true);
-  });
+  // Place scripts here
+  
 
   const desktopModal = document.querySelector('.desktop-modal');
-  // const body = document.querySelector('body');
+
   const desktopProjectBtn = document.querySelectorAll('.desktp-view-project-btn');
+  const modalContent = document.querySelectorAll('.desktop-project-modal-content');
   desktopProjectBtn.forEach((btn) => {
     btn.addEventListener('click', (event) => {
-      // body.style.filter = 'blur(8px)';
       const foundProject = portfolioData.filter((x) => String(x.id) === event.target.id);
       document.getElementsByClassName('desktop-single-project-pic')[0].src = foundProject[0].image;
       document.getElementsByClassName('desktop-single-project-pic')[0].alt = foundProject[0].title;
@@ -142,7 +121,8 @@ const loadRecentWork = () => {
       document.getElementsByClassName('desktop-single-project-skills')[0].innerHTML = foundProject[0].skills.map((item) => `<li>${item}</li>`).join('');
       document.getElementsByClassName('desktop-single-project-desc')[0].innerHTML = foundProject[0].description;
       document.getElementsByClassName('project-source')[0].href = foundProject[0].source;
-      desktopModal.style.display = 'flex';
+      desktopModal.style.display = 'block';
+      modalContent.style.display = 'flex';
     }, true);
   });
 
@@ -186,4 +166,5 @@ const loadActions = () => {
     document.getElementById('about-me').scrollIntoView();
   });
 };
+
 loadActions();
