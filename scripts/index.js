@@ -1,78 +1,51 @@
 const portfolioData = [
   {
     id: 1,
-    title: 'Uber',
-    skills: [
-      'Ruby on Rails',
-      'Css',
-      'Javascript',
-      'React',
-      'Redux',
-      'NodeJS',
-      'Express',
-      'MongoDB',
-      'PostgreSQL',
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './assets/images/uber.jpeg',
-    source: 'https://github.com/sireclifford/sire-portfolio',
+    title: "Node Farm",
+    skills: ["NodeJs", "Express", "Heroku", "HTML", "CSS", "JavaScript", "Ejs"],
+    description: `A simple NodeJs project that shows a list of some common farm products. Each product 
+    has a price, details of its origin, health nutrients. Its beautiful interface is designed with just HTML and CSS. In the future, I will add a backend to this project 
+    to store the data in a database and implement the ecommerce functionality.`,
+    image: "./assets/images/node_farm_1.png",
+    source: "https://github.com/sireclifford/",
+    live: "https://app-genix-test.herokuapp.com/",
   },
   {
     id: 2,
-    title: 'Duolingo',
-    skills: [
-      'React',
-      'NodeJS',
-      'Css',
-      'PostgreSQL',
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './assets/images/duolingo.webp',
-    source: 'https://github.com/sireclifford/sire-portfolio',
+    title: "Duolingo",
+    skills: ["React", "NodeJS", "Css", "PostgreSQL"],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    image: "./assets/images/duolingo.webp",
+    source: "https://github.com/sireclifford/sire-portfolio",
   },
   {
     id: 3,
-    title: 'Airbnb',
-    skills: [
-      'React',
-      'Ruby on Rails',
-      'Css',
-      'React',
-      'PostgreSQL',
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './assets/images/airbnb.png',
-    source: 'https://github.com/sireclifford/sire-portfolio',
+    title: "Airbnb",
+    skills: ["React", "Ruby on Rails", "Css", "React", "PostgreSQL"],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    image: "./assets/images/airbnb.png",
+    source: "https://github.com/sireclifford/sire-portfolio",
   },
   {
     id: 4,
-    title: 'TikTok',
-    skills: [
-      'React',
-      'Ruby on Rails',
-      'Css',
-      'React',
-      'PostgreSQL',
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './assets/images/tiktok.webp',
-    source: 'https://github.com/sireclifford/sire-portfolio',
+    title: "TikTok",
+    skills: ["React", "Ruby on Rails", "Css", "React", "PostgreSQL"],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    image: "./assets/images/tiktok.webp",
+    source: "https://github.com/sireclifford/sire-portfolio",
   },
   {
     id: 5,
-    title: 'Deliveroo',
-    skills: [
-      'React',
-      'Ruby on Rails',
-      'Css',
-      'React',
-      'PostgreSQL',
-    ],
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-    image: './assets/images/deliveroo.svg',
-    source: 'https://github.com/sireclifford/sire-portfolio',
+    title: "Deliveroo",
+    skills: ["React", "Ruby on Rails", "Css", "React", "PostgreSQL"],
+    description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
+    image: "./assets/images/deliveroo.svg",
+    source: "https://github.com/sireclifford/sire-portfolio",
   },
-
 ];
 
 const loadRecentWork = () => {
@@ -138,7 +111,8 @@ const loadRecentWork = () => {
       document.getElementsByClassName('desktop-single-project-title')[1].innerHTML = foundProject[0].title;
       document.getElementsByClassName('desktop-single-project-skills')[0].innerHTML = foundProject[0].skills.map((item) => `<li>${item}</li>`).join('');
       document.getElementsByClassName('desktop-single-project-desc')[0].innerHTML = foundProject[0].description;
-      document.getElementsByClassName('project-source')[0].href = foundProject[0].source;
+      document.getElementsByClassName("project-live")[0].href = foundProject[0].live;
+      document.getElementsByClassName('project-repo')[0].href = foundProject[0].source;
       desktopModal.style.display = 'block';
       modalContent.style.display = 'flex';
     }, true);
